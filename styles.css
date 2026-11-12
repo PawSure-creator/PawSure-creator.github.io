@@ -1,0 +1,82 @@
+/* PawSure website: brand palette and Manrope (bundled locally; no third-party font requests). */
+@font-face { font-family: "Manrope"; font-weight: 400; font-display: swap; src: url("fonts/Manrope_400Regular.ttf") format("truetype"); }
+@font-face { font-family: "Manrope"; font-weight: 600; font-display: swap; src: url("fonts/Manrope_600SemiBold.ttf") format("truetype"); }
+@font-face { font-family: "Manrope"; font-weight: 800; font-display: swap; src: url("fonts/Manrope_800ExtraBold.ttf") format("truetype"); }
+
+:root {
+  --onyx: #16151A;
+  --graphite: #403B42;
+  --lilac: #A4989A;
+  --grape: #6F5184;
+  --powder: #A7B6CB;
+  --bg: #F4F5F8;
+  --card: rgba(255, 255, 255, 0.62);
+  --rim: rgba(255, 255, 255, 0.9);
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: "Manrope", system-ui, sans-serif;
+  color: var(--onyx);
+  background:
+    radial-gradient(60rem 40rem at 10% -10%, rgba(111, 81, 132, 0.22), transparent 60%),
+    radial-gradient(50rem 40rem at 110% 10%, rgba(167, 182, 203, 0.35), transparent 60%),
+    var(--bg);
+  line-height: 1.6;
+  font-size: 17px;
+}
+a { color: var(--grape); text-underline-offset: 3px; }
+a:hover { color: var(--onyx); }
+
+.wrap { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
+
+header.site {
+  display: flex; align-items: center; gap: 14px;
+  padding: 14px 18px; margin-bottom: 28px;
+  background: var(--card); border: 1px solid var(--rim); border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(111, 81, 132, 0.14);
+  backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+}
+header.site img { width: 52px; height: 52px; border-radius: 14px; }
+header.site .name { font-weight: 800; font-size: 24px; letter-spacing: -0.5px; line-height: 1.1; }
+header.site .tag { color: var(--grape); font-weight: 600; font-size: 14px; }
+nav.site { margin-left: auto; display: flex; gap: 14px; flex-wrap: wrap; font-weight: 600; font-size: 15px; }
+nav.site a { text-decoration: none; }
+
+.hero {
+  padding: 28px 24px; margin-bottom: 24px; border-radius: 24px; color: #fff;
+  background: linear-gradient(135deg, var(--grape), var(--graphite) 60%, var(--onyx));
+  box-shadow: 0 20px 40px rgba(111, 81, 132, 0.35);
+}
+.hero h1 { margin: 0 0 8px; font-size: 32px; line-height: 1.15; letter-spacing: -1px; font-weight: 800; }
+.hero p { margin: 0; color: var(--powder); font-weight: 600; }
+
+.card {
+  background: var(--card); border: 1px solid var(--rim); border-radius: 24px;
+  padding: 20px 22px; margin-bottom: 18px;
+  box-shadow: 0 10px 24px rgba(111, 81, 132, 0.10);
+}
+h1.page { font-weight: 800; font-size: 30px; letter-spacing: -0.8px; margin: 0 0 6px; }
+h2 { font-weight: 800; font-size: 21px; margin: 0 0 8px; letter-spacing: -0.3px; }
+h3 { font-weight: 600; font-size: 17px; margin: 14px 0 4px; }
+p { margin: 0 0 10px; }
+ul { margin: 0 0 10px; padding-left: 22px; }
+li { margin-bottom: 4px; }
+.meta { color: var(--graphite); font-size: 15px; margin-bottom: 18px; }
+.note {
+  border-left: 4px solid var(--grape); background: rgba(111, 81, 132, 0.08);
+  padding: 12px 14px; border-radius: 12px; margin: 10px 0;
+}
+.placeholder { background: #fff3c4; padding: 0 4px; border-radius: 4px; }
+footer.site { color: var(--graphite); font-size: 14px; text-align: center; margin-top: 30px; }
+footer.site .slogan { color: var(--grape); font-weight: 600; }
+
+@media (max-width: 520px) {
+  body { font-size: 16px; }
+  .hero h1 { font-size: 26px; }
+  h1.page { font-size: 25px; }
+  nav.site { margin-left: 0; width: 100%; }
+  header.site { flex-wrap: wrap; }
+}

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PawSure Privacy Policy</title>
+  <meta name="description" content="How the PawSure app handles your data.">
+  <link rel="icon" href="images/pawsure-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <img src="images/pawsure-icon.png" alt="PawSure logo">
+    <div><div class="name">PawSure</div><div class="tag">Peace of mind, in every bowl.</div></div>
+    <nav class="site"><a href="index.html">Home</a><a href="support.html">Support</a></nav>
+  </header>
+
+  <h1 class="page">Privacy policy</h1>
+  <p class="meta">
+    Effective date: 12 November 2026<br>
+    App: PawSure for Android (com.pawsure.app)<br>
+    Developer and data controller: Nenad Dimitrijevikj, North Macedonia<br>
+    Privacy contact: <a href="mailto:pawsure.app@gmail.com">pawsure.app@gmail.com</a>
+  </p>
+
+  <section class="card">
+    <h2>1. Summary</h2>
+    <p>PawSure shows dog and cat food recall and safety notices from official public sources. You do not need an account. Your pets, photos and saved items are stored <strong>on your device</strong>. Only if you allow notifications does PawSure send the few alert details described in section 3, such as your region and alert preference. It also downloads the public recall list.</p>
+    <p>PawSure has no advertising, no analytics or tracking tools, and does not sell or share data for advertising.</p>
+  </section>
+
+  <section class="card">
+    <h2>2. Data stored only on your device</h2>
+    <p>The following is saved in PawSure's private storage on your phone and is not sent to us or anyone else:</p>
+    <ul>
+      <li>the pet types you choose (dogs, cats);</li>
+      <li>pet profiles: name, species, breed status and breeds;</li>
+      <li>pet photos you add;</li>
+      <li>recall notices you save;</li>
+      <li>your saved products (watchlist), except as described in section 3 when you choose "Watchlist only" alerts;</li>
+      <li>whether you have seen the welcome screen;</li>
+      <li>a copy of the public recall list, so the app also works offline;</li>
+      <li>which alert you opened last.</li>
+    </ul>
+    <p>PawSure also stores your chosen region, your alert preference and the technical identifiers used for alerts (the installation ID and push token) on your device. If you allow notifications, these are also sent to our alert service, as described in section 3.</p>
+    <p><strong>Photos:</strong> when you add a pet photo, you pick it with Android's photo picker. PawSure receives only the photo you pick, copies it into its private storage and never uploads it. PawSure does not use your camera.</p>
+    <p>Uninstalling PawSure deletes this data from your device. If Android backup is turned on, Android may include app data in your Google backup under Google's terms and may restore it if you reinstall PawSure.</p>
+  </section>
+
+  <section class="card">
+    <h2>3. Recall notifications (device registration)</h2>
+    <p>If you allow notifications, PawSure registers your device with its notification service so it can alert you about new recalls.</p>
+    <h3>What is sent and stored</h3>
+    <ul>
+      <li>a random <strong>installation ID</strong> created by the app, not linked to your name, email or phone number;</li>
+      <li>your device's <strong>push token</strong>, an address issued by the push services to deliver notifications to this app on this device;</li>
+      <li>the <strong>platform</strong> (Android);</li>
+      <li>your <strong>alert preference</strong> ("All recalls" or "Watchlist only");</li>
+      <li>your <strong>region</strong> (North America or Europe), so you receive alerts for your region only;</li>
+      <li>only if you choose "Watchlist only": the <strong>product identifiers</strong> of the products you saved, so we can match alerts to them;</li>
+      <li><strong>timestamps</strong> (registered, last updated, last seen).</li>
+    </ul>
+    <p>When an alert is sent, we keep a <strong>delivery record</strong>: which recall alert went to which registration, its delivery status, the number of attempts, the times it was queued and sent, the push service's delivery reference, and any technical error message. We also keep internal logs of our scheduled recall checks and clean-ups; these contain counts and timings, not personal data.</p>
+    <h3>Who processes it</h3>
+    <ul>
+      <li><strong>Supabase</strong> (database and server functions), which hosts PawSure's service in the EU (Ireland).</li>
+      <li><strong>Expo push notification service</strong> (Expo) and <strong>Firebase Cloud Messaging</strong> (Google), which deliver notifications to your device.</li>
+    </ul>
+    <p>Notifications contain public recall information only.</p>
+    <p><strong>Why:</strong> to send the alerts you asked for. Legal basis: your consent, given when you allow notifications.</p>
+    <p><strong>Your control:</strong> you can stop alerts appearing at any time by turning off PawSure notifications in Android settings. While notifications are off, PawSure stops updating your registration. When the push service tells us that a device can no longer receive alerts (for example after PawSure is uninstalled), we stop sending to it. Registrations that have not checked in for more than 12 months are deleted automatically (see section 7).</p>
+  </section>
+
+  <section class="card">
+    <h2>4. Your region</h2>
+    <p>When you first open PawSure, you choose your recall region: North America or Europe. PawSure stores that choice on your device and does not look up your location or use your IP address to guess it. You can change the region at any time in the app.</p>
+  </section>
+
+  <section class="card">
+    <h2>5. Loading recall information</h2>
+    <p>PawSure downloads the public recall list from its Supabase database. PawSure does not send your pet profiles, photos, saved items or other app-stored personal information when downloading the public recall list. Like any internet service, however, the servers receive your IP address and basic request information, which providers may keep in technical logs for security and operation, according to their own retention settings. Links to official notices open in your web browser; those websites have their own privacy policies.</p>
+  </section>
+
+  <section class="card">
+    <h2>6. What we do not do</h2>
+    <ul>
+      <li>No account, sign-in, name, email or phone number.</li>
+      <li>No advertising and no advertising ID.</li>
+      <li>No analytics, tracking or crash-reporting tools.</li>
+      <li>No sale of personal data and no sharing for advertising.</li>
+      <li>No location: no GPS and no IP-based location lookup. No camera.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>7. How long we keep data</h2>
+    <ul>
+      <li><strong>On your device:</strong> until you delete it in the app or uninstall PawSure.</li>
+      <li><strong>Device registration:</strong> our automatic daily clean-up deletes it once your device has not checked in with our alert service for more than 12 months. With notifications allowed, PawSure checks in each time it starts, when you change your region or alert preference, and, if you use "Watchlist only", when you add or remove products on your watchlist. If you open PawSure again later with notifications allowed, it registers again automatically.</li>
+      <li><strong>Delivery records:</strong> our automatic daily clean-up deletes each record once it is more than 12 months old. A record can be deleted sooner: when a device registration is deleted, all of its delivery records are deleted with it, however recent they are.</li>
+      <li><strong>Backup copies:</strong> separately from the periods above, deleted data may remain for a limited time in our hosting provider's backup or recovery systems, until those copies are replaced or expire under the provider's own procedures. Before maintenance work on the alert service we may also make a temporary backup. We normally delete it after a short observation period, once the work has been checked; we keep it longer only if it is needed to investigate and resolve a problem, and delete it once the problem is resolved. Backup copies are used only to restore the service if something goes wrong.</li>
+      <li><strong>Service providers' technical logs:</strong> according to their retention settings.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>8. Your rights and deletion requests</h2>
+    <p>Depending on where you live (for example under the EU/EEA GDPR or UK GDPR), you have the right to access, correct or delete your data, to restrict or object to processing, to withdraw consent, and to complain to your local data-protection authority.</p>
+    <p>PawSure does not collect your name, email address or phone number, and the app does not display the technical identifiers described in section 3, so we usually cannot tell which registration belongs to you. If you contact us at <a href="mailto:pawsure.app@gmail.com">pawsure.app@gmail.com</a>, we will explain what we hold and act on your request wherever we can identify your data. To stop alerts, turn off PawSure notifications in Android settings or uninstall the app; once the device has not checked in for more than 12 months, its registration is deleted automatically.</p>
+  </section>
+
+  <section class="card">
+    <h2>9. Security</h2>
+    <p>All data is sent over encrypted connections (HTTPS/TLS). The app can only read the public recall list; it cannot read the notification database. Server credentials stay on the server and are not included in the app.</p>
+  </section>
+
+  <section class="card">
+    <h2>10. Children</h2>
+    <p>PawSure is intended for adult pet owners and is not directed to children.</p>
+  </section>
+
+  <section class="card">
+    <h2>11. International transfers</h2>
+    <p>PawSure's own data is hosted in the EU (Ireland). Push delivery providers may process data outside the EU. Expo states that it transfers data to the United States and relies on the EU-U.S. Data Privacy Framework and standard contractual clauses, where applicable. Google may process Firebase Cloud Messaging data in any country where Google or its subprocessors have facilities, and states that it relies on the Data Privacy Framework and standard contractual clauses, where applicable.</p>
+  </section>
+
+  <section class="card">
+    <h2>12. Recall information disclaimer</h2>
+    <p>PawSure is an independent app. It is not affiliated with or endorsed by any regulator, government agency or manufacturer. Recall information comes from public official sources and may be incomplete or delayed. Always check the official notice, and contact your veterinarian with health concerns.</p>
+  </section>
+
+  <section class="card">
+    <h2>13. Changes and contact</h2>
+    <p>We will update this policy when PawSure's data handling changes and show the new effective date above. Questions: <a href="mailto:pawsure.app@gmail.com">pawsure.app@gmail.com</a>.</p>
+  </section>
+
+  <footer class="site"><p class="slogan">PawSure: peace of mind, in every bowl.</p></footer>
+</div>
+</body>
+</html>
